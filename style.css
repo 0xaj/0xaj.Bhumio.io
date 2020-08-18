@@ -1,0 +1,67 @@
+body
+{
+    counter-reset: Count-Value; 
+ background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%);
+}
+
+table
+{
+    
+    border-collapse: separate;
+    width:70%;
+    height:50px;
+    
+}
+.tab{
+   padding-top: 40px;     
+   display: flex;
+  justify-content: center;
+    border: 2px ;
+    color: antiquewhite;
+    text-decoration-color: aqua;
+    text-align: center;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+th{
+    hieght:50px;
+}
+tr td:first-child:before
+{
+  counter-increment: Count-Value;   
+  content:  counter(Count-Value);
+}
+tr{transition:all .25s ease-in-out}
+tr:hover{background-color:;cursor: pointer}
+            
+            
+#details{
+ 
+  display: flex;
+  justify-content: center;
+    width:15%;
+  background:  #d9d9d9;    
+    display: none;
+
+}
+#spacing{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bt{
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: -1px -1px 1px #616161;
+  position: relative;
+  padding: 10px 20px;
+  margin: 0 10px 0 0;
+}
+.bt:hover {
+  -webkit-box-shadow: 0px 0px 0 #00ffff;
+  -moz-box-shadow: 0px 0px 0 #00ffff;
+  top: 3    px;
+  left: 3px;
+    cursor: pointer
+}
